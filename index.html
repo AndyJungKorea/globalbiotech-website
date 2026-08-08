@@ -41,7 +41,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdro
 nav.pri{display:flex;gap:36px;align-items:center}
 nav.pri a{font-size:14.5px;font-weight:600;color:var(--ink-3);letter-spacing:-.005em;transition:color .15s}
 nav.pri a:hover{color:var(--brand-1)}
-.hdr-cta{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--ink-1);color:#fff;border-radius:999px;font-size:13.5px;font-weight:700;letter-spacing:-.005em;transition:background .15s,transform .15s}
+.hdr-cta{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--ink-1);color:#fff;border-radius:999px;font-size:13.5px;font-weight:700;letter-spacing:-.005em;white-space:nowrap;flex-shrink:0;transition:background .15s,transform .15s}
 .hdr-cta:hover{background:var(--brand-1);transform:translateY(-1px)}
 .menu-btn{display:none;width:44px;height:44px;border-radius:10px;align-items:center;justify-content:center}
 .menu-btn span{position:relative;width:22px;height:2px;background:var(--ink-1);border-radius:2px;display:block}
@@ -69,6 +69,7 @@ nav.pri a:hover{color:var(--brand-1)}
 
 .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:44px;padding-top:28px;border-top:1px solid var(--line-1);max-width:560px}
 .stat .n{font-family:'Inter',sans-serif;font-size:26px;font-weight:800;color:var(--ink-1);letter-spacing:-.02em;line-height:1}
+.stat .n.txt{font-size:15px;line-height:1.3;letter-spacing:-.01em}
 .stat .l{margin-top:6px;font-size:12.5px;color:var(--ink-4);font-weight:600;letter-spacing:.01em}
 
 /* Hero right — brand stack preview */
@@ -227,8 +228,8 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
       <div>
         <span class="eyebrow"><span class="dot"></span>제약 · 바이오 · 의료기기 QC</span>
         <h1>
-          엔도톡신 시험 · 무균시험 · 미생물 배양 배지.<br>
-          <span class="grad">QC 실험실 시약과 소모품</span>을 공급합니다.
+          엔도톡신 시험 · 무균시험 · 배양 배지.<br>
+          <span class="grad">QC 실험실 시약 공급.</span>
         </h1>
         <p class="lead">
           글로벌바이오테크는 제약 QC · 임상 · 식품 · 화장품 시험 현장에 시약과 소모품을 공급합니다.<br>
@@ -245,8 +246,8 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
         </div>
         <div class="hero-stats">
           <div class="stat"><div class="n">8</div><div class="l">취급 제조사</div></div>
-          <div class="stat"><div class="n">USP · EP · KP · JP</div><div class="l">대응 약전</div></div>
-          <div class="stat"><div class="n">Lot별 CoA</div><div class="l">시험성적서 원본 동봉</div></div>
+          <div class="stat"><div class="n txt">USP·EP<br>KP·JP</div><div class="l">대응 약전</div></div>
+          <div class="stat"><div class="n txt">Lot별<br>CoA</div><div class="l">시험성적서 원본 동봉</div></div>
         </div>
       </div>
 
