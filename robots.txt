@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://globalbiotech-website.vercel.app/sitemap.xml

@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>글로벌바이오테크 | 제약·바이오·QC 실험실 시약과 장비 종합 공급</title>
+<meta name="description" content="글로벌바이오테크는 엔도톡신 시약, 무균시험 시스템, 미생물 배양 배지, 보이딕 테스트, 여과 필터, 용출시험 소모품 등 QC 실험실용 제품을 공급하는 종합 상사입니다. BIOENDO · GEEVO · Land Bridge · RIKEN · ANOW · ProSense · Excellent Vial · GLOBAL BIOTECH 자체 OEM.">
+<meta name="keywords" content="글로벌바이오테크, Global Biotech, BIOENDO Korea, GEEVO, Land Bridge, RIKEN, ANOW, ProSense, 엔도톡신, 무균시험, 배양 배지, 보이딕, 용출시험, QC 시약">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink-1:#0A0F1E; --ink-2:#1F2841; --ink-3:#3E4A66; --ink-4:#6B7690;
+  --line-1:#E8ECF4; --line-2:#D6DBE6;
+  --bg-1:#FFFFFF; --bg-2:#FAFBFD; --bg-3:#F2F5FA;
+  --brand-1:#1E5AFF; --brand-2:#0B3FCC;
+  --accent-1:#0EA5A5; --accent-2:#F4B740;
+  --success:#10B981;
+  --radius-sm:10px; --radius-md:16px; --radius-lg:24px;
+  --shadow-sm:0 1px 2px rgba(10,15,30,.04),0 2px 8px rgba(10,15,30,.05);
+  --shadow-md:0 8px 24px rgba(10,15,30,.08);
+  --shadow-lg:0 20px 40px rgba(10,15,30,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg-1);color:var(--ink-1);font-family:'Pretendard','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+.container{max-width:1360px;margin:0 auto;padding:0 32px}
+
+/* ===== Header ===== */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line-1)}
+.hdr{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.01em;color:var(--ink-1)}
+.logo-mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--brand-1) 0%,var(--accent-1) 100%);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:15px;font-family:'Inter',sans-serif;letter-spacing:-.02em}
+.logo-txt{display:flex;flex-direction:column;line-height:1.15}
+.logo-txt em{font-style:normal;font-size:12px;color:var(--ink-4);font-weight:600;letter-spacing:.02em;text-transform:uppercase;font-family:'Inter',sans-serif}
+nav.pri{display:flex;gap:36px;align-items:center}
+nav.pri a{font-size:14.5px;font-weight:600;color:var(--ink-3);letter-spacing:-.005em;transition:color .15s}
+nav.pri a:hover{color:var(--brand-1)}
+.hdr-cta{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--ink-1);color:#fff;border-radius:999px;font-size:13.5px;font-weight:700;letter-spacing:-.005em;transition:background .15s,transform .15s}
+.hdr-cta:hover{background:var(--brand-1);transform:translateY(-1px)}
+.menu-btn{display:none;width:44px;height:44px;border-radius:10px;align-items:center;justify-content:center}
+.menu-btn span{position:relative;width:22px;height:2px;background:var(--ink-1);border-radius:2px;display:block}
+.menu-btn span::before,.menu-btn span::after{content:'';position:absolute;left:0;width:22px;height:2px;background:var(--ink-1);border-radius:2px;transition:transform .2s}
+.menu-btn span::before{top:-7px}
+.menu-btn span::after{top:7px}
+
+/* ===== Hero ===== */
+.hero{position:relative;padding:80px 0 96px;background:radial-gradient(1200px 600px at 80% -10%,rgba(30,90,255,.08) 0%,transparent 60%),radial-gradient(900px 500px at 0% 10%,rgba(14,165,165,.06) 0%,transparent 55%),var(--bg-1);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:64px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;background:var(--bg-3);border:1px solid var(--line-1);border-radius:999px;font-size:12.5px;font-weight:600;color:var(--ink-3);letter-spacing:.02em}
+.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--brand-1)}
+.hero h1{margin-top:20px;font-size:clamp(34px,4.6vw,60px);font-weight:900;line-height:1.12;letter-spacing:-.03em;color:var(--ink-1)}
+.hero h1 .grad{background:linear-gradient(90deg,var(--brand-1) 0%,var(--accent-1) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{margin-top:22px;font-size:17px;line-height:1.75;color:var(--ink-3);max-width:560px}
+.hero .lead b{color:var(--ink-1);font-weight:700}
+.hero .lead br+br{content:'';display:block;margin-top:6px}
+.hero-cta{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:12px;font-size:15px;font-weight:700;letter-spacing:-.005em;transition:all .18s}
+.btn-primary{background:var(--brand-1);color:#fff;box-shadow:0 6px 18px rgba(30,90,255,.28)}
+.btn-primary:hover{background:var(--brand-2);transform:translateY(-2px);box-shadow:0 10px 24px rgba(30,90,255,.36)}
+.btn-ghost{background:transparent;color:var(--ink-1);border:1.5px solid var(--line-2)}
+.btn-ghost:hover{border-color:var(--ink-1);background:var(--bg-3)}
+.btn .arr{width:16px;height:16px;stroke:currentColor;stroke-width:2.2;fill:none}
+
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:44px;padding-top:28px;border-top:1px solid var(--line-1);max-width:560px}
+.stat .n{font-family:'Inter',sans-serif;font-size:26px;font-weight:800;color:var(--ink-1);letter-spacing:-.02em;line-height:1}
+.stat .l{margin-top:6px;font-size:12.5px;color:var(--ink-4);font-weight:600;letter-spacing:.01em}
+
+/* Hero right — brand stack preview */
+.hero-visual{position:relative;height:100%;min-height:440px;display:flex;align-items:center;justify-content:center}
+.stack{position:relative;width:100%;max-width:460px;aspect-ratio:1/1}
+.stack .tile{position:absolute;background:#fff;border:1px solid var(--line-1);border-radius:var(--radius-lg);padding:22px 24px;box-shadow:var(--shadow-md);display:flex;flex-direction:column;justify-content:space-between}
+.stack .tile .cat{font-size:11.5px;font-weight:700;color:var(--ink-4);letter-spacing:.06em;text-transform:uppercase}
+.stack .tile .brand{margin-top:8px;font-family:'Inter',sans-serif;font-size:22px;font-weight:800;color:var(--ink-1);letter-spacing:-.015em}
+.stack .tile .desc{font-size:13px;color:var(--ink-3);line-height:1.5;margin-top:4px}
+.stack .tile .tag{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;background:var(--bg-3);border-radius:999px;font-size:11.5px;font-weight:600;color:var(--ink-3);align-self:flex-start;margin-top:auto}
+.stack .t1{top:0;left:0;width:56%;height:44%;border-top:3px solid var(--brand-1);transform:rotate(-2deg)}
+.stack .t2{top:16%;right:0;width:52%;height:42%;border-top:3px solid var(--accent-1);transform:rotate(2deg)}
+.stack .t3{bottom:0;left:8%;width:60%;height:46%;border-top:3px solid var(--accent-2);transform:rotate(-1.5deg)}
+
+/* ===== Brands section ===== */
+.brands{padding:100px 0 120px;background:var(--bg-2)}
+.sec-head{max-width:820px;margin-bottom:56px}
+.sec-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;color:var(--brand-1);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+.sec-eyebrow::before{content:'';display:inline-block;width:24px;height:2px;background:var(--brand-1);border-radius:2px}
+.sec-head h2{font-size:clamp(28px,3.4vw,42px);font-weight:800;line-height:1.2;letter-spacing:-.025em;color:var(--ink-1)}
+.sec-head p{margin-top:14px;font-size:16px;line-height:1.7;color:var(--ink-3);max-width:640px}
+
+.brand-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.brand{position:relative;background:#fff;border:1px solid var(--line-1);border-radius:var(--radius-lg);padding:28px 26px 26px;transition:transform .2s,box-shadow .2s,border-color .2s;display:flex;flex-direction:column;min-height:220px}
+.brand:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--line-2)}
+.brand .no{position:absolute;top:22px;right:24px;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;color:var(--ink-4);letter-spacing:.06em}
+.brand .cat{font-size:11.5px;font-weight:700;color:var(--ink-4);letter-spacing:.06em;text-transform:uppercase}
+.brand h3{margin-top:10px;font-family:'Inter',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.015em;color:var(--ink-1)}
+.brand h3 .kr{display:block;font-family:'Pretendard',sans-serif;font-size:14px;font-weight:600;color:var(--ink-3);margin-top:4px;letter-spacing:-.005em}
+.brand p{margin-top:14px;font-size:13.5px;line-height:1.6;color:var(--ink-3);flex:1}
+.brand .foot{margin-top:18px;display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:600;color:var(--brand-1);letter-spacing:-.005em}
+.brand .foot .arr{width:14px;height:14px;stroke:currentColor;stroke-width:2.4;fill:none;transition:transform .2s}
+.brand:hover .foot .arr{transform:translateX(3px)}
+.brand.own{background:linear-gradient(160deg,#0A0F1E 0%,#1F2841 100%);color:#fff;border-color:transparent}
+.brand.own .no,.brand.own .cat{color:rgba(255,255,255,.55)}
+.brand.own h3{color:#fff}
+.brand.own h3 .kr{color:rgba(255,255,255,.72)}
+.brand.own p{color:rgba(255,255,255,.75)}
+.brand.own .foot{color:var(--accent-2)}
+.brand-link{position:absolute;inset:0;border-radius:var(--radius-lg);z-index:2}
+
+/* ===== CTA banner ===== */
+.cta-banner{padding:88px 0}
+.cta-inner{background:linear-gradient(135deg,var(--ink-1) 0%,var(--ink-2) 100%);border-radius:var(--radius-lg);padding:56px 64px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center;color:#fff;position:relative;overflow:hidden}
+.cta-inner::before{content:'';position:absolute;top:-40%;right:-10%;width:520px;height:520px;background:radial-gradient(circle,rgba(30,90,255,.35) 0%,transparent 65%);pointer-events:none}
+.cta-inner h3{font-size:clamp(24px,2.8vw,34px);font-weight:800;line-height:1.25;letter-spacing:-.02em;position:relative}
+.cta-inner p{margin-top:12px;font-size:15px;color:rgba(255,255,255,.75);line-height:1.7;position:relative}
+.cta-actions{display:flex;flex-direction:column;gap:12px;position:relative}
+.cta-actions .btn-primary{background:#fff;color:var(--ink-1);box-shadow:none;justify-content:center}
+.cta-actions .btn-primary:hover{background:var(--accent-2);color:var(--ink-1)}
+.cta-actions .btn-line{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border:1.5px solid rgba(255,255,255,.2);border-radius:12px;font-size:15px;font-weight:600;color:#fff}
+.cta-actions .btn-line:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+
+/* ===== Footer ===== */
+footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px}
+.foot-brand .logo{color:#fff}
+.foot-brand .logo-txt em{color:rgba(255,255,255,.5)}
+.foot-brand p{margin-top:16px;font-size:13.5px;color:rgba(255,255,255,.55);line-height:1.7;max-width:360px}
+.foot-col h4{font-size:12.5px;font-weight:700;color:#fff;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.foot-col a,.foot-col li{font-size:13.5px;color:rgba(255,255,255,.65);transition:color .15s}
+.foot-col a:hover{color:#fff}
+.foot-copy{margin-top:48px;padding-top:28px;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.foot-copy p{font-size:12px;color:rgba(255,255,255,.45);line-height:1.7}
+
+/* ===== Mobile ===== */
+@media (max-width:940px){
+  .container{padding:0 20px}
+  .hdr{height:64px}
+  nav.pri{display:none}
+  .hdr-cta{display:none}
+  .menu-btn{display:inline-flex}
+  .hero{padding:56px 0 72px}
+  .hero-grid{grid-template-columns:1fr;gap:44px}
+  .hero-visual{min-height:340px;order:2}
+  .stack{max-width:380px}
+  .hero-stats{grid-template-columns:repeat(3,1fr)}
+  .brand-grid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .cta-banner{padding:64px 0}
+  .cta-inner{padding:40px 32px;grid-template-columns:1fr;gap:28px}
+  .foot-grid{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:600px){
+  .container{padding:0 18px}
+  .hero{padding:44px 0 60px}
+  .hero h1{font-size:34px;line-height:1.14}
+  .hero .lead{font-size:15.5px}
+  .hero-stats{margin-top:32px}
+  .stat .n{font-size:22px}
+  .btn{padding:13px 22px;font-size:14.5px}
+  .brands{padding:72px 0 88px}
+  .brand-grid{grid-template-columns:1fr;gap:12px}
+  .brand{min-height:auto;padding:24px 22px 22px}
+  .cta-inner{padding:32px 24px}
+  .foot-copy{flex-direction:column;gap:10px}
+}
+
+/* reveal (default visible for JS-off) */
+.reveal{opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease}
+
+/* skip link */
+.skip{position:absolute;top:-40px;left:0;background:var(--ink-1);color:#fff;padding:8px 16px;z-index:100}
+.skip:focus{top:0}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"글로벌바이오테크",
+  "alternateName":"Global Biotech",
+  "url":"https://globalbiotech-website.vercel.app",
+  "email":"sales@chcrmkorea.com",
+  "telephone":"+82-2-406-4387",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"갈마치로288번길 14, SK V1 Tower A동 1407호",
+    "addressLocality":"성남시 중원구",
+    "addressRegion":"경기도",
+    "postalCode":"13215",
+    "addressCountry":"KR"
+  },
+  "description":"제약·바이오·QC 실험실을 위한 시약과 장비를 공급하는 종합 상사. BIOENDO, GEEVO, Land Bridge, RIKEN, ANOW, ProSense, Excellent Vial 등 브랜드 취급 및 자체 OEM 생산."
+}
+</script>
+</head>
+<body>
+<a href="#main" class="skip">본문으로 건너뛰기</a>
+
+<header>
+  <div class="container hdr">
+    <a class="logo" href="/">
+      <span class="logo-mark">GB</span>
+      <span class="logo-txt">
+        글로벌바이오테크
+        <em>Global Biotech</em>
+      </span>
+    </a>
+    <nav class="pri" aria-label="주 메뉴">
+      <a href="#brands">브랜드</a>
+      <a href="#applications">응용 분야</a>
+      <a href="#company">회사 소개</a>
+      <a href="mailto:sales@chcrmkorea.com">문의</a>
+    </nav>
+    <a class="hdr-cta" href="mailto:sales@chcrmkorea.com">견적 요청
+      <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <button class="menu-btn" aria-label="메뉴 열기"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============== HERO ============== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>제약·바이오·QC 실험실 종합 공급</span>
+        <h1>
+          현장이 신뢰하는 시약과 장비,<br>
+          <span class="grad">여덟 개 브랜드를 한 창구</span>에서.
+        </h1>
+        <p class="lead">
+          <b>글로벌바이오테크</b>는 엔도톡신 검사, 무균시험, 미생물 배양 배지, 여과, 용출시험, 멸균 QC 소모품을 다루는 종합 상사입니다.<br>
+          BIOENDO · GEEVO · Land Bridge · RIKEN · ANOW · ProSense · Excellent Vial 라인업과 자체 OEM 브랜드 GLOBAL BIOTECH를 한 창구에서 공급합니다.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="mailto:sales@chcrmkorea.com">
+            견적 · 카탈로그 요청
+            <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#brands">
+            전체 브랜드 보기
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="n">8</div><div class="l">취급 브랜드</div></div>
+          <div class="stat"><div class="n">4</div><div class="l">약전 대응 (USP·EP·KP·JP)</div></div>
+          <div class="stat"><div class="n">1998~</div><div class="l">Land Bridge 제조 연혁</div></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="stack">
+          <div class="tile t1">
+            <div>
+              <div class="cat">엔도톡신 시험</div>
+              <div class="brand">BIOENDO</div>
+              <div class="desc">Gel-clot · KC · KT · EC · rFC · rCR</div>
+            </div>
+            <span class="tag">USP 85 · 86</span>
+          </div>
+          <div class="tile t2">
+            <div>
+              <div class="cat">무균시험</div>
+              <div class="brand">GEEVO</div>
+              <div class="desc">밀폐 캐니스터 · SM86 집균기</div>
+            </div>
+            <span class="tag">USP 71 · EP 2.6.1</span>
+          </div>
+          <div class="tile t3">
+            <div>
+              <div class="cat">미생물 배양</div>
+              <div class="brand">Land Bridge</div>
+              <div class="desc">화장품 · 식품 · 제약 QC 배지</div>
+            </div>
+            <span class="tag">468종 라인업</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== BRANDS ============== -->
+  <section class="brands" id="brands">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-eyebrow">Brand Lineup</div>
+        <h2>여덟 개 브랜드, 한 창구.</h2>
+        <p>QC 실무의 워크플로우를 따라 정리했습니다. 시료 준비부터 판독까지 필요한 시약과 장비를 한 담당자와 상담합니다.</p>
+      </div>
+
+      <div class="brand-grid">
+        <article class="brand">
+          <span class="no">01</span>
+          <div class="cat">엔도톡신 시험</div>
+          <h3>BIOENDO<span class="kr">Gel-clot · KC · KT · EC · rFC · rCR</span></h3>
+          <p>1978년부터 LAL·TAL 시약을 제조해 온 BIOENDO의 한국 총판. USP 85·86, EP 2.6.14, KP, JP 규격에 준하는 전 라인업.</p>
+          <span class="foot">브랜드 상세 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <a class="brand-link" href="https://bioendokorea.com" target="_blank" rel="noopener" aria-label="BIOENDO 상세 페이지 (bioendokorea.com)"></a>
+        </article>
+
+        <article class="brand">
+          <span class="no">02</span>
+          <div class="cat">무균시험 시스템</div>
+          <h3>GEEVO<span class="kr">Sterility Test Closed Canister · SM86</span></h3>
+          <p>밀폐 캐니스터 · SM86 집균기 · 아이솔레이터를 한 라인에서 공급합니다. 감마선 이중포장 · IOQ 밸리데이션 문서 제공.</p>
+          <span class="foot">브랜드 상세 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <a class="brand-link" href="#brands" aria-label="GEEVO 브랜드 상세 (준비 중)"></a>
+        </article>
+
+        <article class="brand">
+          <span class="no">03</span>
+          <div class="cat">미생물 배양 배지</div>
+          <h3>Land Bridge<span class="kr">화장품·식품·제약 QC 배지 468종</span></h3>
+          <p>1998년 설립. 화장품 미생물한도, 식품 안전검사, 제약 QC에 대응하는 합성배지 라인업. Lot별 CoA 원본을 함께 배송합니다.</p>
+          <span class="foot">브랜드 상세 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <a class="brand-link" href="#brands" aria-label="Land Bridge 브랜드 상세 (준비 중)"></a>
+        </article>
+
+        <article class="brand">
+          <span class="no">04</span>
+          <div class="cat">멸균기 QC</div>
+          <h3>RIKEN<span class="kr">Bowie-Dick Test Pack (BD-TP)</span></h3>
+          <p>선진공 스팀 멸균기의 공기 제거·증기 침투 확인 소모품. ISO 11140-1 Type 2 · ISO 11140-4 Class 2. 매일 첫 사이클용.</p>
+          <span class="foot">브랜드 상세 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <a class="brand-link" href="#brands" aria-label="RIKEN 보이딕 브랜드 상세 (준비 중)"></a>
+        </article>
+
+        <article class="brand">
+          <span class="no">05</span>
+          <div class="cat">미세 여과 필터</div>
+          <h3>ANOW<span class="kr">PM2.5 Air filter · 정밀 여과</span></h3>
+          <p>정밀 여과 필터 라인업. 시료 P/N 또는 사양을 알려주시면 대체 가능한 규격을 회신합니다.</p>
+          <span class="foot">브랜드 상세 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <a class="brand-link" href="#brands" aria-label="ANOW 브랜드 상세 (준비 중)"></a>
+        </article>
+
+        <article class="brand">
+          <span class="no">06</span>
+          <div class="cat">용출시험 소모품</div>
+          <h3>ProSense<span class="kr">Dissolution Cannula · Vessel · 필터</span></h3>
+          <p>CALEVA · DISTEK · ERWEKA · HANSON · PHARMATEST · SOTAX · AGILENT 등 주요 용출기 호환 소모품 대체 라인업.</p>
+          <span class="foot">브랜드 상세 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <a class="brand-link" href="#brands" aria-label="ProSense 브랜드 상세 (준비 중)"></a>
+        </article>
+
+        <article class="brand">
+          <span class="no">07</span>
+          <div class="cat">유리 바이알</div>
+          <h3>Excellent Vial<span class="kr">40 mL TOC Vial · 각종 바이알</span></h3>
+          <p>총유기탄소(TOC) 분석용 40 mL 바이알을 중심으로 다양한 규격의 실험용 바이알을 공급합니다.</p>
+          <span class="foot">브랜드 상세 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <a class="brand-link" href="#brands" aria-label="Excellent Vial 브랜드 상세 (준비 중)"></a>
+        </article>
+
+        <article class="brand own">
+          <span class="no">08</span>
+          <div class="cat">자체 OEM 브랜드</div>
+          <h3>GLOBAL BIOTECH<span class="kr">시린지 필터 · 맞춤 소모품</span></h3>
+          <p>고객 사양에 맞춰 OEM 생산합니다. Hydrophilic PTFE / PVDF Syringe Filter 0.45 μm, 25 mm 등 상시 라인업.</p>
+          <span class="foot">브랜드 상세 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <a class="brand-link" href="#brands" aria-label="자체 OEM 브랜드 상세 (준비 중)"></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA ============== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-inner">
+        <div>
+          <h3>담당자에게 바로 문의하세요.</h3>
+          <p>시료 유형 · 사용 장비 · 원하는 규격을 알려주시면 대응 가능한 브랜드와 예상 리드타임을 회신합니다.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="mailto:sales@chcrmkorea.com">
+            sales@chcrmkorea.com
+          </a>
+          <a class="btn-line" href="tel:+82-2-406-4387">
+            Tel. 02-406-4387
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="company">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="/">
+          <span class="logo-mark">GB</span>
+          <span class="logo-txt">
+            글로벌바이오테크
+            <em>Global Biotech</em>
+          </span>
+        </a>
+        <p>제약·바이오·QC 실험실을 위한 시약과 장비를 공급하는 종합 상사. 취급 브랜드와 자체 OEM 라인업을 한 창구에서 상담합니다.</p>
+      </div>
+      <div class="foot-col">
+        <h4>브랜드</h4>
+        <ul>
+          <li><a href="https://bioendokorea.com" target="_blank" rel="noopener">BIOENDO Korea</a></li>
+          <li><a href="#brands">GEEVO 무균시험</a></li>
+          <li><a href="#brands">Land Bridge 배지</a></li>
+          <li><a href="#brands">RIKEN 보이딕</a></li>
+          <li><a href="#brands">전체 라인업</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>연락처</h4>
+        <ul>
+          <li><a href="mailto:sales@chcrmkorea.com">sales@chcrmkorea.com</a></li>
+          <li>Tel. 02-406-4387</li>
+          <li>Fax. 031-601-9381</li>
+          <li>Cell. 010-4253-4387</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-copy">
+      <p>
+        상호명 : 글로벌바이오테크 &nbsp;|&nbsp; 대표자 : 정기운 &nbsp;|&nbsp; 사업자등록번호 : 660-30-00866<br>
+        경기도 성남시 중원구 갈마치로288번길 14, SK V1 Tower A동 1407호 (13215)
+      </p>
+      <p>&copy; 2026 Global Biotech. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Reveal on scroll (default visible if JS off)
+if('IntersectionObserver' in window){
+  document.querySelectorAll('.brand, .stat, .cta-inner').forEach(el=>{
+    el.style.opacity='0';el.style.transform='translateY(16px)';el.style.transition='opacity .5s ease, transform .5s ease';
+  });
+  const io=new IntersectionObserver((es)=>es.forEach(e=>{
+    if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='none';io.unobserve(e.target)}
+  }),{threshold:.12});
+  document.querySelectorAll('.brand, .stat, .cta-inner').forEach(el=>io.observe(el));
+}
+</script>
+</body>
+</html>
