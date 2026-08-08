@@ -93,10 +93,11 @@ h1,h2,h3,h4{font-weight:700;letter-spacing:-.02em;color:var(--ink-1);line-height
 /* ═════ Header ═════ */
 .header{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.85);backdrop-filter:blur(14px) saturate(1.2);border-bottom:1px solid var(--line-1);transition:box-shadow .3s var(--ease-out)}
 .header.scrolled{box-shadow:var(--s-2)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:32px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;min-height:96px;gap:32px}
 .brand{display:inline-flex;align-items:center;gap:0}
-.brand img{height:44px;width:auto;display:block}
-.brand .logo-globe{height:56px}
+.brand img{height:auto;width:auto;display:block}
+/* 지구본 로고는 프레임 두께 있어 세로 여유 필요 */
+.brand .logo-globe{height:72px;width:auto;object-fit:contain}
 nav.pri{display:flex;align-items:center;gap:4px}
 nav.pri > ul{list-style:none;display:flex;gap:2px;align-items:center}
 nav.pri > ul > li > a{padding:24px 14px;color:var(--ink-2);font-weight:500;font-size:14.5px;border-radius:8px;transition:color .18s,background .18s;display:inline-flex;align-items:center;gap:5px}
@@ -182,10 +183,10 @@ nav.pri > ul > li > a:hover{color:var(--brand-1)}
 /* ═════ Footer ═════ */
 footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:72px 0 40px}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px}
-/* 표준 로고 PNG는 다크 배경에서 가독성 위해 흰 카드로 감쌈 */
-.foot-brand .logo-pair{display:flex;gap:12px;flex-wrap:wrap}
-.foot-brand .logo-wrap{display:inline-flex;align-items:center;background:#fff;padding:10px 14px;border-radius:12px;box-shadow:var(--s-2)}
-.foot-brand img{height:44px;width:auto;display:block}
+/* 지구본 로고는 다크 배경에서 가독성 위해 흰 카드로 감쌈 · 프레임 두께 있어 크게 */
+.foot-brand .logo-pair{display:flex;gap:14px;flex-wrap:wrap}
+.foot-brand .logo-wrap{display:inline-flex;align-items:center;background:#fff;padding:12px 18px;border-radius:14px;box-shadow:var(--s-2)}
+.foot-brand img{height:72px;width:auto;display:block;object-fit:contain}
 .foot-brand p{margin-top:16px;font-size:13.5px;color:rgba(255,255,255,.55);line-height:1.7;max-width:360px}
 .foot-col h4{font-size:12.5px;font-weight:700;color:#fff;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
 .foot-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
@@ -199,8 +200,8 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:72px 0 40px}
   .header-inner{gap:16px}
   nav.pri,.h-cta{display:none}
   .menu-btn{display:inline-flex}
-  .brand img{height:36px}
-  .brand .logo-globe{height:44px}
+  .header-inner{min-height:72px}
+  .brand .logo-globe{height:56px}
   .hero{padding:56px 0 80px}
   .hero-inner{grid-template-columns:1fr;gap:44px}
   .hero-visual{min-height:360px;order:2}
@@ -250,7 +251,7 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:72px 0 40px}
 <header class="header">
   <div class="wrap header-inner">
     <a class="brand" href="/" aria-label="글로벌바이오테크 홈">
-      <img class="logo-globe" src="/images/logo-gb-globe.png" alt="Global Biotech" width="1645" height="606">
+      <img class="logo-globe" src="/images/logo-gb-globe.png" alt="Global Biotech">
     </a>
     <nav class="pri" aria-label="주 메뉴">
       <ul>
