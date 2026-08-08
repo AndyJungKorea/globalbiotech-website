@@ -24,7 +24,13 @@
   --shadow-lg:0 20px 40px rgba(10,15,30,.10);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{background:var(--bg-1);color:var(--ink-1);font-family:'Pretendard','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+html,body{background:var(--bg-1);color:var(--ink-1);font-family:'Pretendard','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  /* 한글 줄바꿈: 어절 단위로만 끊음 (배/양 배지 방지) */
+  word-break:keep-all;overflow-wrap:break-word}
+h1,h2,h3{text-wrap:balance}
+p,.lead,.brand p,.sec-head p{text-wrap:pretty}
+/* 쪼개지면 안 되는 덩어리 (규격·품번·브랜드명) */
+.nb{white-space:nowrap}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
@@ -228,12 +234,16 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
       <div>
         <span class="eyebrow"><span class="dot"></span>제약 · 바이오 · 의료기기 QC</span>
         <h1>
-          엔도톡신 시험 · 무균시험 · 배양 배지.<br>
-          <span class="grad">QC 실험실 시약 공급.</span>
+          <span class="nb">엔도톡신 시험</span> · <span class="nb">무균시험</span> · <span class="nb">배양 배지</span>.<br>
+          <span class="grad nb">QC 실험실 시약 공급.</span>
         </h1>
         <p class="lead">
-          글로벌바이오테크는 제약 QC · 임상 · 식품 · 화장품 시험 현장에 시약과 소모품을 공급합니다.<br>
-          BIOENDO(엔도톡신 시험) · GEEVO(무균시험) · Land Bridge(배양 배지) · RIKEN(멸균 지시계) 등 8개 제조사 라인업과 자체 브랜드 GLOBAL BIOTECH의 OEM 생산을 취급합니다.
+          글로벌바이오테크는 <span class="nb">제약 QC</span> · 임상 · 식품 · 화장품 시험 현장에
+          <span class="nb">시약과 소모품</span>을 공급합니다.<br>
+          <span class="nb">BIOENDO(엔도톡신 시험)</span> · <span class="nb">GEEVO(무균시험)</span> ·
+          <span class="nb">Land Bridge(배양 배지)</span> · <span class="nb">RIKEN(멸균 지시계)</span> 등
+          <span class="nb">8개 제조사</span>를 취급합니다.<br>
+          자체 브랜드 <span class="nb">GLOBAL BIOTECH</span>로 <span class="nb">OEM 생산</span>도 수행합니다.
         </p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="mailto:sales@chcrmkorea.com">
@@ -288,7 +298,8 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
       <div class="sec-head">
         <div class="sec-eyebrow">Lineup</div>
         <h2>취급 제조사</h2>
-        <p>시험 항목별 제조사와 대응 규격입니다. 품목·수량·납기는 담당자가 개별 회신합니다.</p>
+        <p><span class="nb">시험 항목별</span> 제조사와 <span class="nb">대응 규격</span>입니다.
+        <span class="nb">품목·수량·납기</span>는 담당자가 개별 회신합니다.</p>
       </div>
 
       <div class="brand-grid">
@@ -296,7 +307,9 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
           <span class="no">01</span>
           <div class="cat">엔도톡신 시험</div>
           <h3>BIOENDO<span class="kr">Gel-clot · KC · KT · EC · rFC · rCR</span></h3>
-          <p>1978년 설립, LAL·TAL 시약 제조사. 겔화법부터 재조합 시약(rFC·rCR)까지 5가지 시험 방식. USP 〈85〉·〈86〉 · EP 2.6.14 · KP · JP 대응. 한국 총판.</p>
+          <p><span class="nb">1978년 설립</span>, <span class="nb">LAL·TAL 시약</span> 제조사.
+          겔화법부터 <span class="nb">재조합 시약(rFC·rCR)</span>까지 <span class="nb">5가지 시험 방식</span>.
+          <span class="nb">USP 〈85〉·〈86〉</span> · <span class="nb">EP 2.6.14</span> · KP · JP 대응. <span class="nb">한국 총판</span>.</p>
           <span class="foot">상세 보기 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           <a class="brand-link" href="https://bioendokorea.com" target="_blank" rel="noopener" aria-label="BIOENDO 상세 페이지 (bioendokorea.com)"></a>
         </article>
@@ -305,7 +318,10 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
           <span class="no">02</span>
           <div class="cat">무균시험 시스템</div>
           <h3>GEEVO<span class="kr">Sterility Test Closed Canister · SM86</span></h3>
-          <p>2010년 설립. 밀폐 캐니스터 NS01 시리즈, SM86 집균기, 무균시험 아이솔레이터. 감마선 이중포장 · 멸균 인디케이터 카드 내장, IOQ 밸리데이션 문서 제공.</p>
+          <p><span class="nb">2010년 설립</span>. <span class="nb">밀폐 캐니스터 NS01</span> 시리즈,
+          <span class="nb">SM86 집균기</span>, <span class="nb">무균시험 아이솔레이터</span>.
+          <span class="nb">감마선 이중포장</span> · <span class="nb">멸균 인디케이터 카드</span> 내장,
+          <span class="nb">IOQ 밸리데이션 문서</span> 제공.</p>
           <span class="foot">상세 보기 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           <a class="brand-link" href="#brands" aria-label="GEEVO 브랜드 상세 (준비 중)"></a>
         </article>
@@ -314,7 +330,9 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
           <span class="no">03</span>
           <div class="cat">미생물 배양 배지</div>
           <h3>Land Bridge<span class="kr">화장품·식품·제약 QC 배지 468종</span></h3>
-          <p>1998년 설립, ISO 9001 · ISO 17025. 화장품 미생물한도시험, 식품 안전검사, 제약 QC용 합성배지 468종. Lot별 CoA · 처방(formula) 제공.</p>
+          <p><span class="nb">1998년 설립</span>, <span class="nb">ISO 9001</span> · <span class="nb">ISO 17025</span>.
+          <span class="nb">화장품 미생물한도시험</span>, <span class="nb">식품 안전검사</span>,
+          <span class="nb">제약 QC용 합성배지 468종</span>. <span class="nb">Lot별 CoA</span> · <span class="nb">처방(formula)</span> 제공.</p>
           <span class="foot">상세 보기 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           <a class="brand-link" href="#brands" aria-label="Land Bridge 브랜드 상세 (준비 중)"></a>
         </article>
@@ -323,7 +341,9 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
           <span class="no">04</span>
           <div class="cat">멸균기 QC</div>
           <h3>RIKEN<span class="kr">Bowie-Dick Test Pack (BD-TP)</span></h3>
-          <p>선진공 스팀 멸균기의 공기 제거·증기 침투 확인용 지시계. ISO 11140-1 Type 2 · ISO 11140-4 Class 2. 121°C 15분 또는 134°C 3.5분, 보라 → 녹색 판정.</p>
+          <p><span class="nb">선진공 스팀 멸균기</span>의 <span class="nb">공기 제거·증기 침투</span> 확인용 지시계.
+          <span class="nb">ISO 11140-1 Type 2</span> · <span class="nb">ISO 11140-4 Class 2</span>.
+          <span class="nb">121°C 15분</span> 또는 <span class="nb">134°C 3.5분</span>, <span class="nb">보라 → 녹색</span> 판정.</p>
           <span class="foot">상세 보기 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           <a class="brand-link" href="#brands" aria-label="RIKEN 보이딕 브랜드 상세 (준비 중)"></a>
         </article>
@@ -332,7 +352,8 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
           <span class="no">05</span>
           <div class="cat">미세 여과 필터</div>
           <h3>ANOW<span class="kr">PM2.5 Air filter · 정밀 여과</span></h3>
-          <p>정밀 여과 필터 및 PM2.5 에어 필터. 사용 중인 제품의 P/N 또는 사양 기재 시 대응 규격을 회신합니다.</p>
+          <p><span class="nb">정밀 여과 필터</span> 및 <span class="nb">PM2.5 에어 필터</span>.
+          사용 중인 제품의 <span class="nb">P/N 또는 사양</span> 기재 시 <span class="nb">대응 규격</span>을 회신합니다.</p>
           <span class="foot">상세 보기 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           <a class="brand-link" href="#brands" aria-label="ANOW 브랜드 상세 (준비 중)"></a>
         </article>
@@ -341,7 +362,8 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
           <span class="no">06</span>
           <div class="cat">용출시험 소모품</div>
           <h3>ProSense<span class="kr">Dissolution Cannula · Vessel · 필터</span></h3>
-          <p>용출시험기 소모품. CALEVA · DISTEK · ERWEKA · HANSON · PHARMATEST · SOTAX · AGILENT 호환. P/N 기준 대응 품목 회신.</p>
+          <p><span class="nb">용출시험기 소모품</span>. CALEVA · DISTEK · ERWEKA · HANSON ·
+          PHARMATEST · SOTAX · AGILENT 호환. <span class="nb">P/N 기준</span> 대응 품목 회신.</p>
           <span class="foot">상세 보기 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           <a class="brand-link" href="#brands" aria-label="ProSense 브랜드 상세 (준비 중)"></a>
         </article>
@@ -350,7 +372,8 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
           <span class="no">07</span>
           <div class="cat">유리 바이알</div>
           <h3>Excellent Vial<span class="kr">40 mL TOC Vial · 각종 바이알</span></h3>
-          <p>총유기탄소(TOC) 분석용 40 mL 바이알. 규격별 실험용 유리 바이알 취급.</p>
+          <p><span class="nb">총유기탄소(TOC)</span> 분석용 <span class="nb">40 mL 바이알</span>.
+          규격별 <span class="nb">실험용 유리 바이알</span> 취급.</p>
           <span class="foot">상세 보기 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           <a class="brand-link" href="#brands" aria-label="Excellent Vial 브랜드 상세 (준비 중)"></a>
         </article>
@@ -359,7 +382,8 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
           <span class="no">08</span>
           <div class="cat">자체 OEM 브랜드</div>
           <h3>GLOBAL BIOTECH<span class="kr">시린지 필터 · 맞춤 소모품</span></h3>
-          <p>고객 사양 기준 OEM 생산. Hydrophilic PTFE / PVDF 시린지 필터 0.45 μm · 25 mm (GTSF25PT45 · GTSF25PVI45) 등.</p>
+          <p><span class="nb">고객 사양 기준</span> OEM 생산. <span class="nb">Hydrophilic PTFE / PVDF</span>
+          시린지 필터 <span class="nb">0.45 μm · 25 mm</span> (<span class="nb">GTSF25PT45</span> · <span class="nb">GTSF25PVI45</span>) 등.</p>
           <span class="foot">상세 보기 <svg class="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           <a class="brand-link" href="#brands" aria-label="자체 OEM 브랜드 상세 (준비 중)"></a>
         </article>
@@ -373,7 +397,9 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
       <div class="cta-inner">
         <div>
           <h3>견적 · 기술 문의</h3>
-          <p>시험 항목 · 사용 장비(reader model) · 필요 규격 · 수량을 기재해 문의하시면 대응 품목과 리드타임을 회신합니다.</p>
+          <p><span class="nb">시험 항목</span> · <span class="nb">사용 장비(reader model)</span> ·
+          <span class="nb">필요 규격</span> · 수량을 기재해 문의하시면
+          <span class="nb">대응 품목</span>과 <span class="nb">리드타임</span>을 회신합니다.</p>
         </div>
         <div class="cta-actions">
           <a class="btn btn-primary" href="mailto:sales@chcrmkorea.com">
@@ -400,7 +426,9 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
             <em>Global Biotech</em>
           </span>
         </a>
-        <p>제약 · 바이오 · 의료기기 QC 실험실 시약 및 소모품 공급. 8개 제조사 라인업과 자체 브랜드 OEM 생산을 취급합니다.</p>
+        <p><span class="nb">제약 · 바이오 · 의료기기</span> <span class="nb">QC 실험실</span>
+        <span class="nb">시약 및 소모품</span> 공급.<br><span class="nb">8개 제조사 라인업</span>과
+        <span class="nb">자체 브랜드 OEM 생산</span>을 취급합니다.</p>
       </div>
       <div class="foot-col">
         <h4>브랜드</h4>
@@ -424,8 +452,8 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:64px 0 40px}
     </div>
     <div class="foot-copy">
       <p>
-        상호명 : 글로벌바이오테크 &nbsp;|&nbsp; 대표자 : 정기운 &nbsp;|&nbsp; 사업자등록번호 : 660-30-00866<br>
-        경기도 성남시 중원구 갈마치로288번길 14, SK V1 Tower A동 1407호 (13215)
+        <span class="nb">상호명 : 글로벌바이오테크</span> &nbsp;|&nbsp; <span class="nb">대표자 : 정기운</span> &nbsp;|&nbsp; <span class="nb">사업자등록번호 : 660-30-00866</span><br>
+        <span class="nb">경기도 성남시 중원구 갈마치로288번길 14,</span> <span class="nb">SK V1 Tower A동 1407호 (13215)</span>
       </p>
       <p>&copy; 2026 Global Biotech. All rights reserved.</p>
     </div>
