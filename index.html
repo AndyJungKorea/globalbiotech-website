@@ -181,7 +181,10 @@ nav.pri > ul > li > a:hover{color:var(--brand-1)}
 /* ═════ Footer ═════ */
 footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:72px 0 40px}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px}
-.foot-brand img{height:40px;width:auto;opacity:.95}
+/* 표준 로고 PNG는 다크 배경에서 브랜드명 가독성 위해 흰 카드로 감쌈 */
+.foot-brand{}
+.foot-brand .logo-wrap{display:inline-block;background:#fff;padding:10px 16px;border-radius:12px;box-shadow:var(--s-2)}
+.foot-brand img{height:40px;width:auto;display:block}
 .foot-brand p{margin-top:16px;font-size:13.5px;color:rgba(255,255,255,.55);line-height:1.7;max-width:360px}
 .foot-col h4{font-size:12.5px;font-weight:700;color:#fff;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
 .foot-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
@@ -245,7 +248,7 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:72px 0 40px}
 <header class="header">
   <div class="wrap header-inner">
     <a class="brand" href="/" aria-label="글로벌바이오테크 홈">
-      <img src="/images/logo-gb-group.svg" alt="Global Biotech · Global Trading">
+      <img src="/images/logo-gb-v2.png" alt="Global Biotech">
     </a>
     <nav class="pri" aria-label="주 메뉴">
       <ul>
@@ -445,7 +448,7 @@ footer{background:var(--ink-1);color:rgba(255,255,255,.7);padding:72px 0 40px}
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <img src="/images/logo-gb-group-white.svg" alt="Global Biotech · Global Trading">
+        <span class="logo-wrap"><img src="/images/logo-gb-v2.png" alt="Global Biotech"></span>
         <p><span class="nb">미생물 분석 서비스</span> 전문. <span class="nb">제약 · 바이오 · 의료기기</span>
         <span class="nb">QC 실험실</span> 시약 및 소모품 공급.<br>
         <span class="nb">8개 제조사 라인업</span>과 <span class="nb">자체 브랜드 OEM 생산</span>을 취급합니다.</p>
