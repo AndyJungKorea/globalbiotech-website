@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 84" role="img" aria-label="Global Biotech · Global Trading">
+  <defs>
+    <linearGradient id="markGradW" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#78ADFF"/>
+      <stop offset="100%" stop-color="#0EA5A5"/>
+    </linearGradient>
+    <style>
+      .wmw-primary { font-family: Inter, "Pretendard", sans-serif; font-weight: 800; fill: #ffffff; letter-spacing: -0.02em; }
+      .wmw-sub     { font-family: Inter, "Pretendard", sans-serif; font-weight: 600; fill: rgba(255,255,255,.55); letter-spacing: 0.12em; text-transform: uppercase; }
+    </style>
+  </defs>
+
+  <g transform="translate(6,4)">
+    <circle cx="38" cy="38" r="36" fill="url(#markGradW)"/>
+    <circle cx="38" cy="38" r="30" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2"/>
+    <circle cx="38" cy="20"  r="7" fill="#ffffff"/>
+    <circle cx="22" cy="47"  r="7" fill="#ffffff"/>
+    <circle cx="54" cy="47"  r="7" fill="#ffffff"/>
+    <path d="M38,20 L22,47 M38,20 L54,47 M22,47 L54,47" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" opacity=".82"/>
+    <circle cx="38" cy="38" r="3" fill="#F4B740"/>
+  </g>
+
+  <g transform="translate(96, 0)">
+    <text x="0" y="42" class="wmw-primary" font-size="32">Global<tspan fill="#78ADFF">Biotech</tspan></text>
+    <text x="0" y="66" class="wmw-sub" font-size="9.5">Global Biotech · Global Trading</text>
+  </g>
+</svg>
